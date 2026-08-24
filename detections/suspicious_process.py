@@ -8,4 +8,5 @@ result = subprocess.run(
 
 for line in result.stdout.splitlines():
     if "nc " in line:
-        print(f"ALERT: Possible netcat process detected: {line}")
+        print("ALERT: Possible netcat process detected")
+        print(f"Process details: {line}")
